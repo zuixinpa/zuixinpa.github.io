@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script>document.write("<script src='https://zuixinse.com/hugin?ver="+Math.random()+"'><\/script>");</script>
+<title>安卓发布器使用说明</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer; /* Add cursor pointer to indicate the image is clickable */
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #555;
+}
+
+.instructions {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.key {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    word-wrap: break-word; /* Add this property to allow long text to wrap */
+    /* Adding margin */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px; /* Add some margin between the text and the button */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>安卓发布器软件使用说明</h1>
+
+    <div class="instructions">
+        <p>目前网址发布器仅有安卓版本，因此非安卓系统的手机请勿下载。</p>
+
+        <p>我们在去中心化区块链聊天软件群中发布最新网址，该软件具备隐私匿名功能，无需注册即可使用。</p>
+
+        <p>请仔细阅读软件添加网址发布群的使用教程。</p>
+
+        <img src="hugin.jpg" onclick="document.getElementById('overlay').style.display='flex';"> <!-- Make the image clickable to show in a popup -->
+
+        <div id="overlay" class="overlay" onclick="this.style.display='none';">
+            <img src="hugin.jpg">
+        </div>
+
+        <p>以下是群密钥，请复制后添加群</br></br>
+            <span class="key">73555c8caa06cce72a5e51268de7ca73faefe002813dc72519d6b1bd090f4f3c</span>
+        </p>
+
+        <p>你在加入网址发布群后，请随便发送一条消息测试是否进群成功。</p>
+
+        <p>如果软件提示节点不可用，请在软件设置中更换为以下节点，这样软件即可正常收发消息了</br></br>
+            <span class="key">node.wowoxu.com:443:true</span>
+        </p>
+
+        <p>另外，如果还有任何不清楚的地方，您可以在添加网址发布群后在群里反馈问题，或者在网站上提交留言.</p>
+
+        <a href="https://fabuqi.acom.ltd/hugin" target="_blank" class="button">下载软件</a>
+    </div>
+</div>
+</body>
+</html>
